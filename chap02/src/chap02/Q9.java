@@ -20,7 +20,9 @@ class Q9 {
 		int counter = 1;
 		
 		while(counter < m) {
+			
 			d += mdays[isLeap(y)][counter - 1];
+			
 			counter++;
 		}
 		
@@ -30,19 +32,19 @@ class Q9 {
 	// 서기 y년 m월 d일의 그 해 남은 일 수를 구함 
 	static int leftDayOfYear(int y, int m, int d) {
 		int counter = 1;
-		int allDays = 1; // 모든 날짜의 갯수
+		int allDays = 0; // 모든 날짜의 갯수
 		
-		for(int i = 1; i <= 12; i ++) {
+		for(int i = 1; i <= 12; i ++) { // 남은 일수를 구하기위해 전체 일수를 구합니다.
 			allDays += mdays[isLeap(y)][i - 1];
-			System.out.println(allDays);
 		}
 			
 		while(counter < m) {
 			d += mdays[isLeap(y)][counter - 1];
+			
 			counter++;
 		}
 			
-		return allDays - d;
+		return allDays - d; // 남은 일
 	}
 
 	public static void main(String[] args) {
