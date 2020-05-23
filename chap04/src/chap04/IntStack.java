@@ -17,7 +17,7 @@ public class IntStack {
 	// 실행 시 예외 : 스택이 가득 
 	public class OverflowIntStackException extends RuntimeException {
 		public OverflowIntStackException() {
-			System.out.println("스택이 가득 찻습니다.");
+			System.out.println("스택이 가득 찼습니다.");
 		}
 	}
 	

@@ -47,21 +47,6 @@ class IntStackTester {
 					s.dump();
 					break;
 					
-//				case 5:
-//					System.out.print("검색 할 데이터 : ");
-//					x = scnIn.nextInt();
-//					
-//					try {
-//						if(s.indexOf(x) <= -1) {
-//							System.out.println("대상을 찾을 수 없습니다. ");
-//						} else {
-//							System.out.println("대상의 인덱스 : " + s.indexOf(x));
-//						}
-//						
-//					} catch (IntStack.EmptyInStackException e) {}
-//					
-//					break;
-					
 			}
 		}
 
